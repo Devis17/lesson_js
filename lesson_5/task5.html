@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Суму, яку потрібно сплатити
+        let sumNumber = parseFloat(prompt("Введіть суму боргу"));
+
+        // Виконуємо цикл, поки борг не сплачено повністю
+        do {
+            let numNumber = parseFloat(prompt("Введіть суму внеску"));
+
+            // Віднімаємо внесену суму від залишку боргу
+            sumNumber -= numNumber;
+
+            // Якщо залишився борг, повідомляємо користувачу
+            if (sumNumber > 0) {
+                alert(`До сплати залишилось ${sumNumber}`);
+            }
+        }
+        while (sumNumber > 0);
+
+        alert("Сплачено повністю");
+    </script>
+</body>
+
+</html>

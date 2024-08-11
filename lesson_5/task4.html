@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Запитуємо у користувача кількість випадкових чисел
+        let userCount = parseInt(prompt("Введіть кількість чисел:"));
+
+        // Початок списку <ul>
+        document.write('<ul>');
+
+        // Цикл для генерації випадкових чисел і виведення їх в список
+        for (let i = 1; i <= userCount; i++) {
+            let randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.write(`<li>${randomNumber}</li>`);
+        }
+
+        // Кінець списку <ul>
+        document.write('</ul>');
+    </script>
+</body>
+
+</html>
