@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    5. Інвестор вклав S  тис. грн на 20 років під 20% річних. Визначити за допомогою циклів суму, 
+        // яку він одержить (без оподаткування).
+        let numMoney = parseFloat(prompt("Скільки ви хочете вкласти грошей?"))
+        let rate = 20
+        let yearsCount = 20
+        for (let years = 0; years <= yearsCount; years++) {
+            numMoney += numMoney * (rate / 100); // Додаємо 20% до суми
+            document.write(`${numMoney.toFixed(2)} <br>`)
+
+        }
+    </script>
+</body>
+
+</html>

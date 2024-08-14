@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 11.1. Комп’ютер загадує два випадкових числа від 1 до 10. 
+        // Вгадати обидва числа шляхом введеня можливих варіантів.В кінці вивести кількість спроб користувача.\
+        let number1 = Math.floor(Math.random() * 10 + 1)
+        let number2 = Math.floor(Math.random() * 10 + 1)
+        let attemlps = 0
+        let userNumOne, userNumTwo
+        do {
+            let userNumOne = parseInt(prompt("Введіть перше число"))
+            let userNumTwo = parseInt(prompt("Введіть друге число"))
+            if (userNumOne === number1 && userNumTwo === number2) {
+                alert(`Вітаємо ви вгадали два числа`)
+            } else {
+                alert("Спробуйте ще раз")
+            }
+        } while (userNumOne !== number1 || userNumTwo !== number2)
+        document.write(`кількість спроб ${attemlps}`)
+    </script>
+</body>
+
+</html>

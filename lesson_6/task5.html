@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. З клавіатури вводитяться числа поки не буде введено 0. Знайти суму чисел. -->
+    <script>
+        let sum = 0
+        let attempNum
+        do {
+            attempNum = parseInt(prompt("Введіть число"))
+            if (!isNaN(attempNum)) {
+                sum += attempNum
+            }
+        } while (attempNum !== 0)
+        alert(`Сума чисел ${sum}`)
+    </script>
+</body>
+
+</html>
