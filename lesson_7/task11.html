@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a>
+    <script>
+        // Задача 10. Дано покази температур(довільна кількість).
+        // Розробити функцію, яка дозволить знайти середнє значення для додатних показів температури.
+        function tempAverag() {
+            let sum = 0;
+            let count = 5;
+            for (let repeat = 0; repeat < count; repeat++) {
+                let temperatur = parseInt(prompt("Введіть показники температури за 5 днів"))
+                sum += temperatur
+            }
+            let result = sum / count
+            return result
+        }
+        let resultFunction = tempAverag()
+        document.write(`Середня температура ${resultFunction}`)
+    </script>
+</body>
+
+</html>

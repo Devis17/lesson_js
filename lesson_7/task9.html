@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a>
+    <!-- Задача 8. Створити функцію, яка виводить банер
+    (у функцію передаються: зображення, заголовок та посилання, куди переходимо при кліку на зображення
+    (тег img повине знаходитись у середині тега a: <a> <img src=”шлях”> </a> -->
+    <style>
+        h1 {
+            font-size: 40px;
+            color: red;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 170px;
+        }
+    </style>
+    <script>
+        function getImageSearch(image, title, link) {
+            let bannerHTML = `<h2>${title}</h2>
+            <a href="${link}"><img src="${image}" alt="${title}"> 
+                </a>`
+            document.body.innerHTML += bannerHTML
+        }
+        getImageSearch(`seven.jpg`, `Пограєм в 7?`, `https://www.w3schools.com/js/`)
+
+    </script>
+</body>
+<title></title>
+<a href=""><img src="" alt=""></a>
+
+</html>

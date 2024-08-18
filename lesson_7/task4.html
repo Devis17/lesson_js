@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a>
+    <script>
+        //     Задача 3. Створити окремі функції, які для 4 чисел знаходять:
+        // 1)суму;
+        // 2)добуток;
+        // 3)середнє арифметичне;
+        // 4)мінімальне значення. 
+        function calculateSum(a, b, c, d) {
+            return a + b + c + d;
+        }
+        function calculateProduct(a, b, c, d) {
+            return a * b * c * d;
+        }
+        function calculateEverage(a, b, c, d) {
+            return (a + b + c + d) / 4;
+        }
+        function calculateMin(a, b, c, d) {
+            return Math.min = a + b + c + d;
+        }
+        let num1 = parseFloat(prompt("Введіть перше число"))
+        let num2 = parseFloat(prompt("Введіть друге число"))
+        let num3 = parseFloat(prompt("Введіть третє число"))
+        let num4 = parseFloat(prompt("Введіть четверте число"))
+
+        let sum = calculateSum(num1, num2, num3, num4)
+        let product = calculateProduct(num1, num2, num3, num4)
+        let everage = calculateEverage(num1, num2, num3, num4)
+        let min = calculateMin(num1, num2, num3, num4)
+
+
+        document.write(`зальна сума ${sum} <br> добуток ${product} <br> середнє арифметичне ${everage} <br> мінімальне значення ${min}`)
+    </script>
+</body>
+
+</html>

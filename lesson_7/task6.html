@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a>
+    <script>
+        //     Задача 5. Створити окремі функції, які переводять:
+        // Сантиметри у дюйми;
+        // Кілограми у фунти;
+        // Кілометри у милі.
+        function centimetersInches(centimeters) {
+            const inches = 2.54;
+            return centimeters / inches
+        }
+        function kilogramsPounds(kilograms) {
+            const pounds = 2.20462;
+            return kilograms / pounds
+        }
+        function kilometersMiles(kilometers) {
+            const miles = 0.621371
+            return kilometers / miles
+        }
+
+        let num1 = centimetersInches(parseFloat(prompt("Введіть сантиметри")))
+        let num2 = kilogramsPounds(parseFloat(prompt("Введіть Кілограми")))
+        let num3 = kilometersMiles(parseFloat(prompt("Введіть кілометри ")))
+        document.write(`Дюймів ${num1.toFixed(2)}<br> Кілограми ${num2.toFixed(2)} <br> Кілометри ${num3.toFixed(2)} `)
+    </script>
+</body>
+
+</html>

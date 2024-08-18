@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a>
+    <script>
+        function numberMonthName(numberMonth) {
+            let nameMonth
+            if (numberMonth <= 0 || numberMonth > 12)
+                nameMonth = "помилка"
+            switch (numberMonth) {
+                case 1:
+                    nameMonth = "Січень"
+                    break;
+                case 2:
+                    nameMonth = "Лютий"
+                    break;
+                case 3:
+                    nameMonth = "березань"
+                    break;
+                case 4:
+                    nameMonth = "квітень"
+                    break;
+                case 5:
+                    nameMonth = "травень"
+                    break;
+                case 6:
+                    nameMonth = "червень"
+                    break;
+                case 7:
+                    nameMonth = "липень"
+                    break;
+                case 8:
+                    nameMonth = "серпень"
+                    break;
+                case 9:
+                    nameMonth = "вересень"
+                    break;
+                case 10:
+                    nameMonth = "жовень"
+                    break;
+                case 11:
+                    nameMonth = "листопад"
+                    break;
+                case 12:
+                    nameMonth = "грудень"
+                    break;
+            }
+            return nameMonth
+        }
+        let leadNumber = numberMonthName(parseInt(prompt("Введіть цифру від 1-12")))
+        document.write(`Місяць ${leadNumber}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="index.html">back</a>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        //  Задача 6. Створити функцію, яка створює таблицю з вказаною кількістю рядків і 
+        //  стовпців (таблиця заповнюється заданим фіксованим повідомленням).
+        function getTableRousColoms(rows, colum, message) {
+            document.write(`<table  border="1">`)
+            for (let i = 0; i < rows; i++) {
+                document.write(`<tr>`)
+                for (let a = 0; a < colum; a++) {
+                    document.write(`<td>${message} </td>`)
+                }
+                document.write(`</tr>`)
+            }
+            document.write(`</table>`)
+        }
+        let rows = parseInt(prompt("Введіть перше значеня"))
+        let colum = parseInt(prompt("Введіть друге значеня"))
+        let message = prompt("Введіть перше значеня")
+
+        getTableRousColoms(rows, colum, message)
+    </script>
+
+</body>
+
+</html>

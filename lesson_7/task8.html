@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="index.html">back</a>
+    <script>
+        // Задача 7. Створити функцію, яка випадковим чином виводить на екран одне із 4 зображень(шляхи до зображень передаються у функцію)
+
+        function getRandomImage(image1, image2, image3, image4) {
+            let randomImg = Math.floor(Math.random() * 4 + 1)
+            let searcgImg
+            switch (randomImg) {
+                case 1: searcgImg = image1
+                    break;
+                case 2: searcgImg = image2
+                    break;
+                case 3: searcgImg = image3
+                    break;
+                case 4: searcgImg = image4
+                    break;
+            }
+            document.write(`<img src ="${searcgImg}" alt ="randomImg"> `)
+        }
+        getRandomImage(`cherry.jpg`, `limon.jpg`, `orange.png`, `seven.jpg`)
+
+    </script>
+</body>
+
+</html>

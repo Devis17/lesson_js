@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a>
+    <script>
+        //Задача 2. Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.
+        function numberWorkDay(numberDay) {
+            let numberWeek
+            if (numberDay <= 0 || numberDay > 7) {
+                numberWeek = "Error"
+            }
+            else if (numberDay <= 5) {
+                numberWeek = "Робочий день"
+            } else if (numberDay <= 7) {
+                numberWeek = "вихідний"
+            }
+            return numberWeek
+        }
+        let leadNumberDay = numberWorkDay(parseInt(prompt("Введіть день")))
+        document.write(`Це ${leadNumberDay}`)
+    </script>
+</body>
+
+</html>

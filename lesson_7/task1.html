@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">back</a> <br>
+    <script>
+        //Задача 0. Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць.
+        function getTimeMonthYear(monthNumber) {
+            let timeYear
+            if (monthNumber <= 0 || monthNumber > 12) {
+                timeYear = "Некоректне значення"
+            } else if (monthNumber <= 2 || monthNumber === 12) {
+                timeYear = "Winter"
+            }
+            else if (monthNumber <= 5) {
+                timeYear = "Spring"
+            } else if (monthNumber <= 8) {
+                timeYear = "Summer"
+            } else if (monthNumber <= 11) {
+                timeYear = "autumn"
+            }
+            return timeYear
+        }
+        let userDriving = getTimeMonthYear(parseInt(prompt("Введіть номер місяця")))
+        document.write(`Пора року ${userDriving} <br>`)
+    </script>
+</body>
+
+</html>
